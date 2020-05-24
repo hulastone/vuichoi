@@ -9,8 +9,7 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	//log "github.com/Sirupsen/logrus"
-	log "https://github.com/open-policy-agent/example-api-authz-go/tree/master/vendor/github.com/sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 )
 
 func SetDebug() {
