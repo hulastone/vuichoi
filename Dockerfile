@@ -8,6 +8,10 @@ RUN apk --no-cache add \
 
 WORKDIR /data
 
-COPY soundscape-linux-amd64 /usr/bin/soundscape1
+COPY soundscape-linux-amd64 /usr/bin/soundscape
 
-ENTRYPOINT ["/usr/bin/soundscape1"]
+ENTRYPOINT ["/usr/bin/soundscape"]
+
+
+
+
