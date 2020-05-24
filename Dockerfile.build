@@ -32,7 +32,7 @@ RUN go fmt && \
     go-bindata --pkg main static/... templates/...
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
-    go build -v --compiler gc --ldflags "-extldflags -static -s -w -X main.version=${BUILD_VERSION}" -o /usr/bin/soundscape-linux-amd64
+    go build -v --compiler gc --ldflags "-extldflags -static -s -w -X main.version=${BUILD_VERSION}" -o /usr/bin/soundscape-linux-amd641
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=7 \
     go build -v --compiler gc --ldflags "-extldflags -static -s -w -X main.version=${BUILD_VERSION}" -o /usr/bin/soundscape-linux-armv7
