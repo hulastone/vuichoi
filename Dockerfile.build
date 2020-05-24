@@ -20,7 +20,8 @@ RUN go get \
     github.com/eduncan911/podcast \
     github.com/rylio/ytdl \
     go.uber.org/zap \
-    golang.org/x/crypto/acme/autocert
+    golang.org/x/crypto/acme/autocert \
+    github.com/Sirupsen/logrus github.com/mitchellh/cli github.com/mitchellh/go-homedir gopkg.in/yaml.v2
 
 COPY *.go ./
 COPY internal ./internal
